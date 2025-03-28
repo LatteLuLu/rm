@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>在div中间加一条竖线</title>
+
+    <style>
+        .containerDiv{
+            width:100%;
+            overflow:hidden;
+            height: 100px;
+        }
+        .leftDiv,.rightDiv{
+            float:left;
+            display:inline-block;
+        }
+        .leftDiv{
+            width:49%;
+            border-right:1px solid #f00;
+            border-top: 1px solid #c4c4c4;
+            border-bottom: 1px solid #c4c4c4;
+        }
+        .rightDiv{
+            width:50%;
+            border-top: 1px solid #c4c4c4;
+            border-bottom: 1px solid #c4c4c4;
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="containerDiv">
+    <div class="leftDiv">222</div>
+    <div class="rightDiv">333</div>
+</div>
+
+</body>
+</html>

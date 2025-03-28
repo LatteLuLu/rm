@@ -1,0 +1,1205 @@
+/*================管理者可见================*/
+
+.manager_edit{
+    float: right;
+    position: relative;
+    right: 10px;
+    width: 45px;
+    padding-left: 10px ;
+    height: 30px;
+    border-bottom: 1px solid black;
+    /*background-color: gray;*/
+}
+
+.manager_edit a{
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+
+
+
+
+
+
+/*index页面*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #EEEEEE;
+}
+
+.nav{
+    width: 100%;
+    height: 70px;
+    position: relative;
+    background-color: #52616b;
+}
+
+.nav h1{
+    float: left;
+    position: relative;
+    left: 10px;
+    font-size: 40px;
+    line-height: 70px;
+    color: white;
+}
+
+.nav .img1{
+    margin-left: 30px;
+    width: 70px;
+    height: 70px;
+    float: left;
+}
+
+.nav_ul{
+    width: 60%;
+    height: 100%;
+    margin-left: 300px;
+
+}
+
+.nav_ul ul li{
+    float: left;
+    width: 25%;
+    height: 100%;
+    /*去除ul前的小黑点*/
+    list-style-type: none;
+    text-align: center;
+    line-height: 70px;
+}
+
+.nav_ul ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+.nav_ul ul li:hover{
+    background-color: orange;
+}
+
+.nav_right{
+    width: 130px;
+    height: 70px;
+    /*border: 2px solid red;*/
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    background-color:#c9d6df;
+}
+
+.nav_right .img2{
+    position: absolute;
+    left: 30px;
+    right: 50px;
+    width: 70px;
+    height: 70px;
+}
+
+.nav_right .nav_ul2{
+    border: 2px solid black;
+    width: 130px;
+    /*height: 150px;*/
+    position: absolute;
+    top: 70px;
+    display: none;
+    float: left;
+}
+
+.nav_ul2 ul li{
+    text-align: center;
+    line-height: 50px;
+    list-style-type: none;
+    background-color: white;
+    border-bottom: 1px solid black;
+}
+
+.nav_ul2 li:hover{
+    background-color: #e3e3e3;
+}
+
+.nav_ul2 li a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+/*轮播图*/
+.carousel{
+    width: 100%;
+    height: 500px;
+    border: 2px solid #e5e5;
+}
+
+.carousel img{
+    width: 100%;
+    height: 100%;
+}
+
+.imgprev{
+
+    background-image: url("../img/login_3.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 50px;
+    height: 100%;
+    float: left;
+    left: 100px;
+    top: -500px;
+    position: relative;
+
+}
+
+.imgnext{
+    background-image: url("../img/login_4.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 50px;
+    height: 100%;
+    /*右浮动后，它就能显示到最上边*/
+    float: right;
+    /*z-index: unset;*/
+    top: -500px;
+    right: 100px;
+    position: relative;
+}
+
+
+
+
+/*================宣传页面==================*/
+
+
+
+
+
+
+/*宣传页面————内容部分*/
+.index_content{
+    width: 80%;
+    height: 1500px;
+    /*background-color: skyblue;*/
+    margin: 0 10%;
+
+}
+
+.index_content h1{
+    font-size: 100px;
+    text-align: center;
+    line-height: 1500px;
+}
+
+
+/*==============战队简介页面==================*/
+/*头部样式*/
+.introduce_header img{
+    width: 100%;
+    heigth: 80px;
+}
+
+.introduce_header p{
+    float: left;
+    position: relative;
+    top: -230px;
+    left: 130px;
+    font-size: 30px;
+}
+
+/*内容样式*/
+
+
+.introduce_content{
+    margin: 30px 5%;
+    border: 2px solid #CCCCCC;
+    width: 90%;
+
+}
+
+.introduce_content h1{
+    text-align: center;
+    left: -50px;
+    position: relative;
+    bottom: 10px;
+}
+
+.introduce_content span{
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    color: #111122;
+    margin: 3px 18%;
+}
+
+.introduce_content .content_img{
+    width: 800px;
+    height: 500px;
+}
+
+.content_in {
+    margin: 5px 20px;
+    padding: 1% 8%;
+    /*border: 1px solid black;*/
+}
+
+.content_in p{
+    /*首行缩进2个字符*/
+    text-indent: 2em;
+    font-size: 18px;
+    color: #111122;
+    font-family: 宋体, Arial, Helvetica, sans-serif;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+/*====================时间轴页面=====================*/
+.progress{
+    margin: auto;
+    width: 95%;
+    /*height: 1000px;*/
+    /*border: 1px solid blue;*/
+    padding: 3% 0 3% 0;
+}
+
+.progress_ul li{
+    list-style-type: none;
+    /*border: 2px solid #ff0000;*/
+    width: 50%;
+    height: 150px;
+    /*设置li_div的百分比高度不起作用，可以设置flex*/
+    display: flex;
+    float: left;
+}
+
+
+/*.progress_li_div_div img{
+    width: 100px;
+    height: 100px;
+    float: left;
+}*/
+
+.progress_li_div_div p{
+    margin: 5px 10px 5px 10px;
+    text-indent: 2em;
+    padding: 10px;
+
+}
+
+
+/*修改li的样式，左边的li添加右边框线，右边的li添加左边框线*/
+.progress_ul .li_left{
+    border-right: 10px solid #52616b;
+    /*float: left;*/
+    position: relative;
+    left: 0;
+
+    z-index: 2;
+
+}
+
+.li_left h3{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.li_left div{
+    margin-top: 5px;
+
+}
+
+
+.li_left>div{
+    width: 80%;
+    heigth: 100%;
+    background-color: #c9d6df;
+
+    box-shadow: 10px 10px 5px #888888;
+    border-radius: 20px;
+}
+
+.progress_ul .li_right{
+    border-left: 10px solid #52616b;
+    /*float: right;*/
+    position: relative;
+    left: 50.05%;
+}
+
+
+.li_right h3{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.li_right div{
+    margin-top: 5px;
+}
+
+.li_right>div{
+    width: 80%;
+    heigth: 100%;
+    background-color: #c9d6df;
+    position: relative;
+    left:20%;
+
+    box-shadow: 10px 10px 5px #888888;
+    border-radius: 20px;
+}
+
+/*左右时间标志<p>标签,right和left和li的左右一致*/
+.progress_ul .p_right{
+    line-height: 150px;
+    position: relative;
+    left: 1%;
+
+    z-index: 1;
+
+}
+
+.progress_ul .p_left{
+    line-height: 150px;
+    position: relative;
+    left: -20%;
+
+    z-index: 1;
+}
+
+
+/*向下箭头的设置*/
+.to_bottom {
+    width: 0;
+    height: 0;
+    border-top: 70px solid #52616b;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    position: relative;
+    left: 49%;
+}
+
+
+
+/*=====时间轴圆点=====*/
+.progress_div_left{
+    height: 150px;
+    /*background-color: red;*/
+    width: 11%;
+    height: 150px;
+    margin-left: 40% ;
+    position: relative;
+}
+
+.progress_div_left p{
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    background-color: white;
+}
+
+.progress_div_left div{
+    width: 100%;
+    height: 30%;
+    /*background-color: green;*/
+    position: absolute;
+    top: 35%;
+
+}
+
+.progress_div_left div div{
+    width: 90%;
+    height: 8px;
+    background-color: #c9d6df;
+}
+
+.progress_div_left .radius{
+    width: 20px;
+    height: 20px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;;
+    background-color: #c9d6df;
+    float: right;
+    position: relative;
+    right: 0;
+    top: 10px;
+    /*top: 20px;*/
+    z-index: 99;
+
+}
+
+.progress_div_right{
+    height: 150px;
+    /*background-color: red;*/
+    width: 12.3%;
+    height: 150px;
+    margin-left: 49.7% ;
+    position: relative;
+}
+
+.progress_div_right p{
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    background-color: white;
+}
+
+.progress_div_right div{
+    width: 100%;
+    height: 30%;
+    /*background-color: green;*/
+    position: absolute;
+    top: 35%;
+
+}
+
+.progress_div_right div div{
+    width: 90%;
+    height: 8px;
+    background-color: #c9d6df;
+}
+
+.progress_div_right .radius{
+    width: 20px;
+    height: 20px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;;
+    background-color: #c9d6df;
+    float: left;
+    position: relative;
+    left: 0;
+    top: 10px;
+    /*top: 20px;*/
+    z-index: 99;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*==============时间轴页面管理===================*/
+.progress_manager{
+    margin: 0 auto;
+    width: 1200px;
+    height: 450px;
+    border: 1px solid black;
+    padding: 30px;
+
+}
+
+.progress_manager_h1{
+    margin: 20px auto;
+    text-align: center;
+}
+.progress_manager table{
+    table-layout: fixed;/* 只有定义了表格的布局算法为fixed，下面td的定义才能起作用。 */
+    height: 450px;
+    width: 1100px;
+    margin: 0 3%;
+}
+
+.progress_manager thead th{
+    color: white;
+    background-color: #52616b;
+    width: 220px;
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid black;
+}
+
+
+
+.progress_manager tbody {
+    display: block;
+    width: 1130px;
+    height: 350px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.progress_manager table tbody tr{
+    width: 1000px;
+    height: 80px;
+    display: table;
+    table-layout: fixed;
+
+}
+
+.progress_manager table tr td{
+    /*color: red;*/
+    border-bottom: 1px solid #CCCCCC;
+    text-align: center;
+    width: 220px;
+    height: 50px;
+    /*word-break:keep-all;!* 或是 white-space:nowrap;不换行 *!*/
+    /*white-space:nowrap;*/
+    overflow:hidden;/* 内容超出宽度时隐藏超出部分的内容 */
+    text-overflow:ellipsis;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用*/
+
+}
+
+.progress_manager table tr td div{
+    overflow-x: hidden;
+    text-overflow:ellipsis;
+    width: 220px;
+    height: 80px;
+    overflow-y: scroll;
+}
+
+#page_nav{
+    width: 100%;
+    height: 30px;
+    margin: auto;
+
+    text-align: center;
+    line-height: 60px;
+}
+
+
+
+
+
+
+/*=================时间轴信息编辑=====================*/
+.progress_edit_h1{
+    margin: 2%;
+    text-align: center;
+}
+
+.progress_edit{
+    width: 900px;
+    height: 450px;
+    border: 1px solid gray;
+    /*background-color: #FFFF99;*/
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.progress_edit tr td{
+    height: 40px;
+    border: 1px solid black;
+}
+
+.progress_edit tr td:first-child{
+    width: 100px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.progress_edit tr td:first-child input{
+    font-size: 16px;
+    margin: 0 100px;
+}
+
+.progress_edit tr td:last-child{
+    width: 350px;
+}
+
+.progress_edit tr td:last-child input{
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.progress_edit tr td:last-child span{
+    font-size: 10px;
+    color: red;
+}
+
+.progress_edit tr td textarea{
+    margin-left: 20px;
+    width: 460px;
+    height: 180px;
+    font-size: 14px;
+}
+
+
+
+
+
+
+/*====================财务汇报页面=====================*/
+.finance_h1{
+    text-align: center;
+    margin: 2%;
+}
+
+.finance{
+    width: 1150px;
+    height: 500px;
+    margin: 0 auto;
+    padding-top: 20px;
+    background-color: #E0E0E0;
+    border: 5px;
+    box-shadow: 10px 10px 5px #888888;
+
+}
+
+.finance .div_form{
+    margin: 1% 5.5%;
+}
+
+.finance .div_form input{
+    width: 100px;
+}
+
+.finance_table{
+
+    height: 400px;
+    margin: auto;
+    border-collapse: collapse;
+    border-width: 1px  0 ;
+
+}
+.finance_table tbody{
+    display: block;
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.finance_table tr{
+    display: table;
+    width: 1050px;
+    height: 50px;
+    table-layout: fixed;
+}
+
+.finance_table tbody tr td,.finance_table th,.finance_table tfoot tr td{
+    width: 100px;
+
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid black;
+}
+
+.finance_table tr td:first-child,.finance_table th:first-child{
+    border-width: 1px 1px 1px 0;
+
+}
+
+.finance_table tr td:last-child,.finance_table th:last-child{
+    border-width: 1px 0 1px 1px;
+}
+
+.finance_table th{
+    color: white;
+    background-color: #52616b;
+}
+
+
+
+/*已经被th代替
+.finance_table tr:first-child td{
+    color: white;
+    background-color: #52616b;
+}*/
+
+
+
+
+
+
+
+
+/*==============财务信息编辑===================*/
+.finance_manager_h1{
+    margin: 2%;
+    text-align: center;
+}
+
+.finance_manager{
+    width: 1150px;
+    height: 500px;
+    margin: 0 auto;
+
+}
+
+.finance_manager_table{
+    width: 1050px;
+    height: 400px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 2px solid #CCCCCC;
+}
+.finance_manager_table tr .directory{
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    padding: 5px;
+    color: white;
+    border-bottom: 2px solid #CCCCCC;
+    background-color: #52616b;
+}
+
+.finance_manager_table tr td{
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid #e3e3e3;
+}
+.finance_manager_table tr:first-child td{
+    border-width: 2px 2px 2px 0 ;
+}
+.finance_manager_table tr:last-child td{
+    border-width: 2px 0 2px 2px ;
+}
+
+
+.finance_manager_table tr td input{
+    width: 170px;
+    height: 28px;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+/*==================成员签到页面=====================*/
+.insider_sign_h1{
+    text-align: center;
+    margin:2%;
+}
+
+.insider_sign{
+    width: 1150px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.insider_sign_table{
+    width: 1050px;
+    height: 400px;
+    margin: 0 auto;
+    border: 2px solid red;
+}
+
+.insider_sign_table tr td{
+    text-align: center;
+    width: 150px;
+    height: 50px;
+}
+
+.insider_sign_table tr td p{
+    font-size: 50px;
+    color: green;
+    /*display: none;*/
+
+}
+
+.insider_sign_table tr:last-child td{
+    border-top: 2px solid #e3e3e3;
+    border-bottom: 2px solid #e3e3e3;
+
+}
+.insider_sign_table tr:last-child td input{
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    color: green;
+    text-align: center;
+
+}
+
+
+
+
+
+
+/*===================所有成员信息展示界面=================*/
+.insider_h1{
+    text-align: center;
+    margin: 2%;
+}
+
+.insider{
+    width: 1170px;
+    height: 500px;
+    margin: 0 auto;
+    /*border: 1px solid black;*/
+    padding-top: 20px;
+    background-color: #E0E0E0;
+    border: 5px;
+    box-shadow: 10px 10px 5px #888888;
+}
+
+.insider_table{
+    width: 1050px;
+    height: 400px;
+    margin: 2% auto 0 auto;
+    /*border: 1px solid blueviolet;*/
+    border-width: 1px 0;
+    border-collapse: collapse;
+}
+
+.insider_table tr td{
+    width: 150px;
+    height: 50px;
+    /*border: 1px solid #CCCCCC;*/
+    border: 1px solid black;
+    text-align: center;
+
+}
+
+.insider_table tr td:first-child{
+    border-width: 1px 1px 1px 0;
+}
+.insider_table tr td:last-child{
+    border-width: 1px 0 1px 1px;
+}
+
+
+
+.insider_table tr:first-child td{
+    background-color: #52616b;
+    color: white;
+}
+
+
+
+
+
+
+/*==================成员信息编辑==================*/
+/*insider_add.jsp,insider_update.jsp公用这一个CSS样式*/
+.insider_edit_h1{
+    text-align: center;
+    margin: 2%;
+}
+
+.insider_edit{
+    width: 630px;
+    height: 550px;
+    margin: 0 auto;
+    /*border: 1px solid deeppink;*/
+}
+
+.insider_edit label{
+    width: 110px;
+    height: 80px;
+    font-size: 18px;
+    text-align: center;
+    display: inline;
+
+}
+
+.insider_edit input{
+    width: 500px;
+    height: 45px;
+    font-size: 16px;
+    margin: 0 3%;
+}
+
+.insider_edit img{
+    width: 150px;
+    height: 50px;
+    float: right;
+    position: relative;
+    right: 50px;
+}
+
+.insider_edit input:last-child{
+    width: 500px;
+    border: gray;
+    margin: 0 auto;
+    color: black;
+    background-color: #BDBDBD;
+    /*background-color: skyblue;*/
+
+}
+
+/*返回按钮，暂时不用
+#return_btn{
+    width: 500px;
+    height: 45px;
+    font-size: 16px;
+    margin: 2% 3%;
+}*/
+
+
+/*==错误信息提示==*/
+/*不知道为什么在style.css中没有作用，在本页面的style标签中可用
+.insider_edit span{
+    color: red;
+    float: right;
+    position: relative;
+    right: 0;
+}*/
+
+
+
+
+
+
+
+
+
+
+/*===================个人信息===================*/
+
+.insider_self{
+    width: 80%;
+    height: 920px;
+    margin: 1% auto;
+}
+/*左边的div*/
+.insider_self_left{
+    width: 25%;
+    height: 50px;
+    float: left;
+    background-color: white;
+}
+
+.insider_self_left_img1{
+    width: 30px;
+    height: 15px;
+    float: left;
+    position: relative;
+    top: 17.5px;
+    left: 15px;
+}
+
+.insider_self_left_img2{
+    width: 15px;
+    height: 30px;
+    float: right;
+    position: relative;
+    top: 10px;
+    right: 20px;
+
+}
+
+.insider_self_left span{
+    font-size: 18px;
+    line-height: 50px;
+    margin-left: 20px;
+}
+
+
+/*右边的div*/
+.insider_self_right{
+    width: 73%;
+    height: 900px;
+    margin: 0 1% 0 26%;
+    background-color: white;
+}
+
+.insider_self_right .right_top{
+    height: 50px;
+    border-bottom: 2px solid #e3e3e3;
+}
+
+.insider_self_right .right_top h3{
+    line-height: 50px;
+    position: relative;
+    left: 20px;
+    float: left;
+}
+
+.insider_self_right .right_top_btn{
+    font-size: 18px;
+    float: right;
+    position: relative;
+    right: 20px;
+    top: 10px;
+    border: 0;
+    color: skyblue;
+}
+
+/*右边div编辑前*/
+.right_bottom_first_1{
+    width: 100%;
+    height: 300px;
+    margin: 1% auto 5% auto;
+    /*display: none;*/
+}
+
+.right_bottom_first_1 table{
+    width: 800px;
+    height: 100%;
+    /*border: 1px solid red;*/
+    border-collapse: collapse;
+    margin: 30px;
+
+}
+
+.right_bottom_first_1 table tr td{
+    height: 30px;
+    text-align: left;
+    line-height: 50px;
+    /*font-weight: bold; 加粗*/
+}
+
+.right_bottom_last_1{
+    width: 400px;
+    margin: 1% auto 5% 5%;
+    display: none;
+
+}
+
+.right_bottom_last_1 label{
+    width: 80px;
+    height: 30px;
+    text-align: left;
+    font-size: 14px;
+    /*border: 2px solid red;*/
+    display: inline-block;
+}
+
+.right_bottom_last_1 input{
+    border: 1px solid #99CC33;
+    height: 30px;
+    width: 300px;
+}
+
+.right_bottom_last_1 input:last-child{
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    float: right;
+    position: relative;
+    right: 20px;
+    top: 5px;
+}
+
+
+
+
+
+
+
+/*=================成员登录=================*/
+/*.login_h1{
+    margin: 3% 0 10px 3%;
+    float: left;
+}*/
+
+.login{
+    width: 500px;
+    height: 480px;
+    border: 2px solid black;
+    margin: 2% auto;
+    /*background-color: whitesmoke;*/
+    background-color: white;
+}
+
+/*.login hr{
+    margin-top: 60px;
+}*/
+
+.login_div{
+    margin: 40px 0 25px 80px;
+
+}
+
+/*.login span{
+    color: red;
+    float: right;
+    position: relative;
+    top: 20px;
+    right: 20px;
+}*/
+
+.login label{
+    width: 100px;
+    font-size: 20px;
+    margin: 20px  5px 20px 10px;
+    display: inline-block;
+}
+
+.login input{
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    /*margin: 50px;*/
+}
+
+.login input:last-child{
+    width: 300px;
+    height: 50px;
+    font-size: 16px;
+    margin: 3% 4%;
+    background-color: #BDBDBD;
+}
+
+/*之后改动的login.html*/
+
+.login_div_img{
+    width: 100%;
+    height: 100%;
+    padding-left: 25%;
+    margin-bottom: 5%;
+
+}
+
+.login_div_img img{
+    width: 25%;
+    height: 25%;
+    margin: 1%;
+}
+
+.login_div span{
+    color: red;
+    position: relative;
+    float: bottom;
+    right: 0;
+}
+
+
+
+
+
+
+
+/*======================页脚=======================*/
+.footer{
+    background-color: #52616b;
+    color: #ffffff;
+    width: 100%;
+    height: 120px;
+    /*position: relative;*/
+    /*bottom: 0;*/
+    padding: 10px;
+}
+
+.footer p{
+    text-align: center;
+    line-height: 30px;
+}
+
+.footer p a{
+    color: #ffffff;
+    text-decoration: none;
+
+}
